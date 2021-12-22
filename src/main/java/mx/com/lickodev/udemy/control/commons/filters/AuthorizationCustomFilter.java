@@ -35,6 +35,9 @@ public class AuthorizationCustomFilter extends BasicAuthenticationFilter {
 		this.env = environment;
 	}
 
+	/**
+	 * Con esto seteas el contexto de segurirdad de spring para poder acceder a los metodos por roles y SecurityContextHolder
+	 */
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
